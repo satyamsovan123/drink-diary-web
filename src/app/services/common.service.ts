@@ -10,9 +10,8 @@ export class CommonService {
   constructor(private router: Router) {}
 
   logger(data: any) {
-    if (environment.production) {
-      return;
-    }
+    return;
+    console.log(data);
   }
 
   spinnerSubject = new BehaviorSubject<boolean>(false);
