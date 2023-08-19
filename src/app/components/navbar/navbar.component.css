@@ -1,0 +1,21 @@
+.fake-anchor {
+  cursor: pointer;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    align-items: flex-start;
+    /* background-color: aqua; */
+    /* position: absolute; */
+    /* z-index: 111; */
+  }
+}
+
+path {
+  fill: black !important;
+  /* fill: white !important; */
+}

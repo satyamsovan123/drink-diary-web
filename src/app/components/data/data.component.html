@@ -1,0 +1,81 @@
+<section class="center-container">
+  <div class="content">
+    <form [formGroup]="form">
+      <div class="inputs mb-3" style="justify-content: center">
+        <input
+          type="text"
+          class="form-control"
+          id="beverage"
+          placeholder="Drink name"
+          formControlName="beverageName"
+        />
+      </div>
+      <div class="inputs mb-3">
+        <svg
+          (click)="handleTotalDrinksDecrease()"
+          class="fake-anchor minus"
+          width="108px"
+          height="35px"
+          viewBox="0 0 108 35"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <g
+            id="View-controllers"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <path
+              d="M4,17.4628571 C4,21.4727619 5.26970346,24.7314286 7.80911038,27.2388571 C10.3485173,29.7462857 13.6432637,31 17.6933495,31 L90.3633733,31 C94.4134591,31 97.6987517,29.7462857 100.219251,27.2388571 C102.73975,24.7314286 104,21.4727619 104,17.4628571 C104,13.464381 102.73975,10.2209524 100.219251,7.73257143 C97.6987517,5.24419048 94.4134591,4 90.3633733,4 L17.6933495,4 C13.6432637,4 10.3485173,5.24419048 7.80911038,7.73257143 C5.26970346,10.2209524 4,13.464381 4,17.4628571 Z"
+              id="Path"
+              stroke="black"
+              stroke-width="6.16"
+              fill-rule="nonzero"
+            ></path>
+          </g>
+        </svg>
+
+        <input
+          type="number"
+          class="form-control custom-size"
+          id="password"
+          placeholder="0"
+          formControlName="totalDrinks"
+        />
+
+        <svg
+          (click)="handleTotalDrinksIncrease()"
+          class="fake-anchor plus"
+          width="108px"
+          height="108px"
+          viewBox="0 0 108 108"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <g
+            id="View-controllers"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <path
+              d="M4,53.502889 C4,57.5081416 5.26970346,60.7782505 7.80911038,63.3132157 C10.3485173,65.8481808 13.6432637,67.1156634 17.6933495,67.1156634 L40.3546912,67.1156634 L40.3546912,89.4207375 C40.3546912,93.4637392 41.6120468,96.7377 44.1267581,99.24262 C46.6414694,101.74754 49.929656,103 53.9913179,103 C58.0529799,103 61.3535143,101.74754 63.8929212,99.24262 C66.4323281,96.7377 67.7020316,93.4637392 67.7020316,89.4207375 L67.7020316,67.1156634 L90.3633733,67.1156634 C94.4250352,67.1156634 97.7132218,65.8481808 100.227933,63.3132157 C102.742644,60.7782505 104,57.5081416 104,53.502889 C104,49.4483314 102.742644,46.1533775 100.227933,43.6180271 C97.7132218,41.0826768 94.4250352,39.8150016 90.3633733,39.8150016 L67.7020316,39.8150016 L67.7020316,17.6532199 C67.7020316,13.6102182 66.4323281,10.3239311 63.8929212,7.79435865 C61.3535143,5.26478622 58.0529799,4 53.9913179,4 C49.929656,4 46.6414694,5.26478622 44.1267581,7.79435865 C41.6120468,10.3239311 40.3546912,13.6102182 40.3546912,17.6532199 L40.3546912,39.8150016 L17.6933495,39.8150016 C13.6432637,39.8150016 10.3485173,41.0826768 7.80911038,43.6180271 C5.26970346,46.1533775 4,49.4483314 4,53.502889 Z"
+              id="Path"
+              stroke="black"
+              stroke-width="6.16"
+              fill-rule="nonzero"
+            ></path>
+          </g>
+        </svg>
+      </div>
+    </form>
+    <button type="button" class="btn btn-primary btn-md" (click)="handleSave()">
+      Save
+    </button>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+p {
+  text-align: justify;
+  line-height: 2;
+  mix-blend-mode: darken;
+}
+
+h1 {
+  text-align: center;
+  font-size: 90px !important;
+  font-variation-settings: "wght" 600, "wdth" 150;
+}
+
+span {
+  font-variation-settings: "wght" 500, "wdth" 120;
+}
