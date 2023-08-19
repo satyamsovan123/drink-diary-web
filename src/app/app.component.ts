@@ -43,7 +43,7 @@ export class AppComponent implements OnInit, AfterContentChecked {
   getBackgroundStyle(background: string): string {
     let style: string;
 
-    switch (background.toLowerCase()) {
+    switch (background?.toLowerCase()) {
       case 'water':
         style = backgroundConstant.water;
 
@@ -81,7 +81,7 @@ export class AppComponent implements OnInit, AfterContentChecked {
   getSafariHeaderColor(background: string): string {
     let color: string;
 
-    switch (background.toLowerCase()) {
+    switch (background?.toLowerCase()) {
       case 'water':
         color = 'rgba(59, 112, 185, 1)';
 
@@ -112,8 +112,6 @@ export class AppComponent implements OnInit, AfterContentChecked {
         color = 'rgba(179, 179, 179, 1)';
         break;
     }
-
-    console.log(color);
     return color;
   }
 }
