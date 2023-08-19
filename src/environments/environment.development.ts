@@ -1,5 +1,5 @@
 export const environment = {
-  baseUrl: 'http://localhost:3000/api/',
+  baseUrl: 'https://drink-diary-server.onrender.com/api/',
   production: false,
   development: true,
 };
