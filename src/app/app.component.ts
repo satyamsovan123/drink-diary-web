@@ -84,15 +84,13 @@ export class AppComponent implements OnInit, AfterContentChecked {
     switch (background?.toLowerCase()) {
       case 'water':
         color = 'rgba(59, 112, 185, 1)';
-
         break;
 
       case 'tea':
         color = 'rgba(180, 106, 45, 1) ';
         break;
-
       case 'beer':
-        color = 'rgba(201, 194, 105, 1)';
+        color = 'rgba(199, 140, 63, 1)';
         break;
 
       case 'coffee':
