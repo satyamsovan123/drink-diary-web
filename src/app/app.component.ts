@@ -113,6 +113,7 @@ export class AppComponent implements OnInit, AfterContentChecked {
         break;
     }
 
+    console.log(color);
     return color;
   }
 }
