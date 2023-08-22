@@ -27,6 +27,7 @@ export class HelpComponent implements OnInit, OnDestroy {
 
   handleDeleteAccount() {
     let message: string = '';
+    this.commonService.updateSpinnerSubject(true);
     const subscription = this.backendService
       .deleteAccount()
       .pipe(
@@ -62,6 +63,7 @@ export class HelpComponent implements OnInit, OnDestroy {
 
   handleDeleteData() {
     let message: string = '';
+    this.commonService.updateSpinnerSubject(true);
     const subscription = this.backendService
       .deleteData()
       .pipe(
