@@ -62,6 +62,7 @@ export class HelpComponent implements OnInit, OnDestroy {
   }
 
   handleDeleteData() {
+    console.log('called');
     let message: string = '';
     this.commonService.updateSpinnerSubject(true);
     const subscription = this.backendService
